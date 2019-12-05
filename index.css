@@ -1,0 +1,20 @@
+#cloud1{
+  animation: cloud1 30s infinite;
+}
+
+@keyframes cloud1 {
+  /* 0%   {left : 0px;}
+  100% {left : 200px;}*/
+
+  to{ transform: translateX(50%); }
+}
+
+#cloud2{
+  animation: cloud2 30s infinite;
+}
+
+@keyframes cloud2 {
+
+
+  to{ transform: translateX(-50%); }
+}
