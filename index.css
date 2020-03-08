@@ -1,4 +1,4 @@
-#cloud1{
+.clouds-front #cloud-1{
   animation: cloud1 30s infinite;
 }
 
@@ -9,7 +9,7 @@
   to{ transform: translateX(50%); }
 }
 
-#cloud2{
+.clouds-front #cloud-2{
   animation: cloud2 30s infinite;
 }
 
