@@ -1,20 +1,68 @@
 .clouds-front #cloud-1{
-  animation: cloud1 30s infinite;
+	animation: frontcloud1 60s linear infinite;
 }
 
-@keyframes cloud1 {
-  /* 0%   {left : 0px;}
-  100% {left : 200px;}*/
-
-  to{ transform: translateX(50%); }
+@keyframes frontcloud1 {
+  0%  { transform: translate(0, -80px);}
+  50% { transform: translate(100px, -80px);}
+  100%{ transform: translate(0, -80px);}
 }
 
 .clouds-front #cloud-2{
-  animation: cloud2 30s infinite;
+  animation: frontcloud2 120s linear infinite;
 }
 
-@keyframes cloud2 {
-
-
-  to{ transform: translateX(-50%); }
+@keyframes frontcloud2 {	
+  0%  { transform: translate(10px, -15px);}
+  50% { transform: translate(-250px, -15px);}
+  100%{ transform: translate(10px, -15px);}
 }
+
+.clouds-back #cloud-1{
+	animation: backcloud1 90s linear infinite;
+}
+
+@keyframes backcloud1 {
+  0%  { transform: translate(0,-100px);}
+  50% { transform: translate(100px, -100px);}
+  100% { transform: translate(0,-100px);}
+
+  0% { opacity: 1; }
+  10% { opacity: 0.6; }
+  30% { opacity: 0.4; }
+  65% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+.clouds-back #cloud-2{
+	animation: backcloud2 120s linear infinite;
+}
+
+@keyframes backcloud2 {
+  0%  { transform: translate(-10px,-120px);}
+  50% { transform: translate(50px, -120px);}
+  100% { transform: translate(-10px,-120px);}
+
+  0% { opacity: 0.8; }
+  30% { opacity: 0.5; }
+  65% { opacity: 0.6; }
+  100% { opacity: 0.8; }
+}
+
+.clouds-back #cloud-3{
+	animation: backcloud3 90s linear infinite;
+}
+
+@keyframes backcloud3 {
+  0%  { transform: translate(10,-100px);}
+  50% { transform: translate(-50px, -100px);}
+  100% { transform: translate(10,-100px);}
+
+  0% { opacity: 1; }
+  10% { opacity: 0.6; }
+  30% { opacity: 0.4; }
+  35% { opacity: 0.6; }
+  65% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
