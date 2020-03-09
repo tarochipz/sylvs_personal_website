@@ -1,12 +1,13 @@
-<html>
-  <head>
-    <title>Meow</title>
-    <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <svg width="1366" height="768" version="1.1" viewBox="0 0 361.42 203.2" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+
+class App extends React.Component{
+    render(){
+        return(
+            <svg width="100%" height="100%" version="1.1" viewBox="0 0 361.42 203.2">
       <g class="background">
-        <rect id="gradient-sky-container" transform="translate(.50197 -92.294)" x=".919" y="93.339" width="359.66" height="174.77" ry="0" fill="url(#i)" opacity=".94" stroke="#b6dcff" stroke-width="1.638"/>
+        <rect id="gradient-sky-container" transform="translate(.50197 -92.294)" x=".06" y="93.339" width="362" height="174.77" ry="0" fill="url(#i)" opacity=".94"/>
         <defs id="gradient-sky">
           <filter id="h" x="-.007" y="-.048" width="1.014" height="1.096" color-interpolation-filters="sRGB">
             <feGaussianBlur stdDeviation=".02"/>
@@ -208,5 +209,8 @@
         </g>
       </g>
     </svg>
-  <body>
-</html>
+        )
+    }
+}
+
+ReactDOM.render(<App />, document.getElementById('app'))
