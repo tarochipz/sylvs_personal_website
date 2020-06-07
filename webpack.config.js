@@ -9,27 +9,27 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
 	// 1. starting point webpack uses to start building dependency graph (root JS file)
 	entry: './app/index.jsx',
-	// 2. which transformations to make
+  // 2. which transformations to make
+  //      by default webpack only understands JS and JSON files, all other files need to be converted
+	//      loaders transform non-JS source code so we can preprocess the files and add to dependency graph
 	module: {
-		//by default webpack only understands JS and JSON files, all other files need to be converted
-		//loaders transform non-JS source code so we can preprocess the files and add to dependency graph
 		rules: [
-			{ test: /\.(jsx)$/, use: 'babel-loader' }, //use babel JS compiler on all extensions that end with .jsx
-			{ test: /\.css$/, use: ['style-loader', 'css-loader'] }, //interprets @import and url() like import/require()
+			{ test: /\.(jsx)$/, use: 'babel-loader' }, // use babel JS compiler on all extensions that end with .jsx
+			{ test: /\.css$/, use: ['style-loader', 'css-loader'] }, // interprets @import and url() like import/require()
 			{ test: /\.svg$/, use: ['@svgr/webpack'] },
 		],
 	},
-	// 3. where to output newly transformed code when webpack runs (it will end up in {AppName}/dist/index_bundle.js)
+	// 3. where to output newly transformed code when webpack runs (it will end up in {AppName}/dist/bundle.js)
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		// path: __dirname + 'app/assets/javascript',
 		filename: 'bundle.js',
-	},
-	mode: 'development',
-	//plugins are used for any other task that loaders can’t do (asset mgmt, optimization etc.)
+  },
+  // optional configuratins below
+	// 1. plugins are used for any other task that loaders can’t do (asset mgmt, optimization etc.)
 	plugins: [
-		//this plugin injects bundled JS as part of build process,
-		//otherwise we have to manually add it in index.html
+		// this plugin injects bundled JS as part of build process,
+		// otherwise we have to manually add it in index.html
 		new HtmlWebpackPlugin({
 			template: 'app/index.html',
 		}),

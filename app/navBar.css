@@ -1,0 +1,24 @@
+.container {
+  float:left;
+}
+
+h1 {
+  font-family: Helvetica, sans-serif;
+  /* font-size: 1.8vw; */
+  font-size: 22px;
+  color: red;
+  float:left;
+  /* position:relative; */
+}
+
+ul {
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  float:right;
+}
+
+li {
+  padding: 15px;
+}
