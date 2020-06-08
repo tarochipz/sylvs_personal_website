@@ -8,8 +8,16 @@ class App extends React.Component {
 	render() {
 		return (
 			<div id="pageWrapper">
-				<NavBar/>
-				<SvgBackground/>
+				<div className="nav">
+					<NavBar />
+				</div>
+				<div className="textOverlay">
+					<h2>
+						Hi, I'm Sylvia!
+						A full stack engineer based in San Francisco, from Toronto.
+					</h2>
+				</div>
+				<SvgBackground />
 			</div>
 		);
 	}
