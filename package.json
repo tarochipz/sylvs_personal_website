@@ -2,7 +2,7 @@
   "name": "portfolio_website",
   "version": "1.0.0",
   "description": "WIP - playing around with some SVGs and React",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
     "create": "webpack",
     "start": "webpack-dev-server --open"
