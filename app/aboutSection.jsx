@@ -14,13 +14,13 @@ function AboutSection() {
 					for 3 years.
 				</p>
 				<p>
-					I enjoy solving problems and creating visual things - from web apps and UIs, to Instagram content, to
-					a delicious aesthetically plated meal.
+					I enjoy solving problems and creating visual things - from web apps and UIs, to Instagram content,
+					to a delicious aesthetically plated meal.
 				</p>
 				<p>
 					I spend my time away from my computer casually biking around the Bay Area, playing Beat Saber and
-					DDR, doing HIIT and hot yoga, doing photography, in the kitchen experimenting with food and cocktail
-					recipes, travelling to new places, and attending music festivals.
+					DDR, doing HIIT and hot yoga, doing photography, creating food and cocktail recipes, travelling to
+					new places, and attending music festivals.
 				</p>
 			</div>
 		</div>
