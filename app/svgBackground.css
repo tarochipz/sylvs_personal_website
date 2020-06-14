@@ -1,3 +1,7 @@
+svg{
+  padding-bottom: 15px
+}
+
 .clouds-front #cloud-1{
 	animation: frontcloud1 60s linear infinite;
 }

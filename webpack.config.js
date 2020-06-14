@@ -14,7 +14,7 @@ module.exports = {
 	//      loaders transform non-JS source code so we can preprocess the files and add to dependency graph
 	module: {
 		rules: [
-			{ test: /\.(jsx)$/, use: 'babel-loader' }, // use babel JS compiler on all extensions that end with .jsx
+			{ test: /\.(js||jsx)$/, use: 'babel-loader' }, // use babel JS compiler on all extensions that end with .jsx
 			{ test: /\.css$/, use: ['style-loader', 'css-loader'] }, // interprets @import and url() like import/require()
 			{ test: /\.svg$/, use: ['@svgr/webpack'] },
 		],
