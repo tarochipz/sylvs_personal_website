@@ -4,7 +4,7 @@
   "description": "WIP - playing around with some SVGs and React",
   "main": "index.jsx",
   "scripts": {
-    "create": "webpack",
+    "start": "webpack",
     "wp-dev": "webpack-dev-server --open"
   },
   "repository": {
