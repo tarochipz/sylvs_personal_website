@@ -3,10 +3,11 @@
 // A 'bundle' is a group of connected code that has been compiled for the browser.
 
 // there are 3 things webpack needs to know
-var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+	mode: 'production',
 	// 1. starting point webpack uses to start building dependency graph (root JS file)
 	entry: './app/index.jsx',
   // 2. which transformations to make

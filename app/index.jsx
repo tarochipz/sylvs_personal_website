@@ -4,7 +4,7 @@ import './index.css';
 import NavBar from './navBar.jsx';
 import SvgBackground from './svgBackground.jsx';
 import AboutSection from './aboutSection.jsx';
-
+import ResumeSection from './resumeSection.jsx';
 
 class App extends React.Component {
 	render() {
@@ -18,7 +18,7 @@ class App extends React.Component {
 				</div>
 				<SvgBackground />
 				<AboutSection />
-				{/* <ResumeSection/> */}
+				<ResumeSection/>
 				{/* <Footer/> */}
 			</div>
 		);

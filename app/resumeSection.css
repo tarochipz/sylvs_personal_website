@@ -1,0 +1,19 @@
+.timeline {
+  font-family: 'Raleway', sans-serif;
+  color: red;
+  list-style-type: none;
+  text-align: right;
+  border-right: 3px solid red;
+  width: 30%;
+  float: left;
+}
+
+.timeline > li {
+  padding: 10px;
+}
+
+.timelineDetails {
+  border: 1px solid red;
+  margin: 15px;
+  float: left;
+}
