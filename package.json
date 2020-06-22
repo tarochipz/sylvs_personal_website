@@ -2,7 +2,7 @@
   "name": "portfolio_website",
   "version": "1.0.0",
   "description": "WIP - playing around with some SVGs and React",
-  "main": "index.jsx",
+  "main": "app/index.jsx",
   "scripts": {
     "start": "webpack",
     "wp-dev": "webpack-dev-server --open"
