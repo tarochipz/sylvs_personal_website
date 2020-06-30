@@ -4,12 +4,16 @@
   "description": "WIP - playing around with some SVGs and React",
   "main": "app/index.jsx",
   "scripts": {
-    "start": "webpack",
+    "start": "node server.js", // serves app
+    "heroku-postbuild": "webpack -p", // runs after installation
     "wp-dev": "webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tarochipz/portfolio_website.git"
+  },
+  "engines": {
+    "node": "10.12.0"
   },
   "keywords": [],
   "author": "Sylvia C",
