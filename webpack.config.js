@@ -9,7 +9,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
 	mode: 'production',
 	// 1. starting point webpack uses to start building dependency graph (root JS file)
-	entry: './app/index.jsx',
+	entry: './src/index.jsx',
   // 2. which transformations to make
   //      by default webpack only understands JS and JSON files, all other files need to be converted
 	//      loaders transform non-JS source code so we can preprocess the files and add to dependency graph
@@ -32,7 +32,7 @@ module.exports = {
 		// this plugin injects bundled JS as part of build process,
 		// otherwise we have to manually add it in index.html
 		new HtmlWebpackPlugin({
-			template: 'app/index.html',
+			template: 'src/index.html',
 		}),
 	],
 };
