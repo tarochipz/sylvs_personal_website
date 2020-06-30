@@ -4,8 +4,8 @@
   "description": "WIP - playing around with some SVGs and React",
   "main": "app/index.jsx",
   "scripts": {
-    "start": "node server.js", // serves app
-    "heroku-postbuild": "webpack -p", // runs after installation
+    "start": "node server.js",
+    "heroku-postbuild": "webpack -p",
     "wp-dev": "webpack-dev-server --open"
   },
   "repository": {
