@@ -5,7 +5,6 @@
   "main": "app/index.jsx",
   "scripts": {
     "start": "node server.js",
-    "heroku-postbuild": "webpack -p",
     "wp-dev": "webpack-dev-server --open"
   },
   "repository": {
