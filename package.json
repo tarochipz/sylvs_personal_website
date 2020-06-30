@@ -5,6 +5,7 @@
   "main": "app/index.jsx",
   "scripts": {
     "start": "node server.js",
+    "heroku-postbuild": "webpack -p",
     "wp-dev": "webpack-dev-server --open"
   },
   "repository": {
@@ -21,6 +22,7 @@
     "url": "https://github.com/tarochipz/portfolio_website/issues"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-inlinesvg": "^1.2.0",
