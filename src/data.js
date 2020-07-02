@@ -1,10 +1,10 @@
 export const data = [
 	{
-		company: 'Engineering @ LiveRamp',
+		company: 'Software Engineering @ LiveRamp',
 		jobTitle: 'Full Stack Engineer - Application Experience',
 		date: 'September 2019 - Present',
 		jobDescription: [
-			'Owned quarter OKR for alpha release of large OAuth project',
+			'Owned OKR for OAuth alpha release, designed and code complex React components, API layer and database tables',
 			'Certified Scrum master',
 			'Championed quality and site reliability initiatives',
 		],

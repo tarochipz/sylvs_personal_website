@@ -9,6 +9,7 @@ export class ResumeSection extends React.Component {
 			jobTitle: data[0].jobTitle,
 			date: data[0].date,
 			jobDescription: data[0].jobDescription,
+			active: 0,
 		};
 	}
 
@@ -18,7 +19,11 @@ export class ResumeSection extends React.Component {
 				<ul className="timeline">
 					{data.map((entry, index) => {
 						return (
-							<li key={index} onClick={() => this.handleClick(index)}>
+							<li
+								className={this.state.active === index ? 'active' : ''}
+								key={index}
+								onClick={() => this.handleClick(index)}
+							>
 								{entry.company}
 							</li>
 						);
@@ -42,6 +47,7 @@ export class ResumeSection extends React.Component {
 			jobTitle: data[index].jobTitle,
 			date: data[index].date,
 			jobDescription: data[index].jobDescription,
+			active: index,
 		});
 	}
 }

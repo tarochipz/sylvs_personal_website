@@ -6,6 +6,7 @@
   border-right: 3px solid red;
   width: 30%;
   float: left;
+  padding-inline-start: 0px;
 }
 
 .timeline > li {
@@ -15,11 +16,17 @@
 .timeline > li:hover {
   font-weight: bold;
   cursor: pointer;
+}
+
+.timeline .active {
+  font-weight: bold;
   font-size: 1.1em;
 }
 
 .timelineDetails {
-  border: 1px solid red;
-  margin: 15px;
+  font-family: 'Inconsolata', monospace;
+  color: red;
+  margin: 10px;
   float: left;
+  width: 60%;
 }
