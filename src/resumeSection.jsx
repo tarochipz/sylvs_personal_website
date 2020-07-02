@@ -1,32 +1,49 @@
 import React from 'react';
 import './resumeSection.css';
+import { data } from './data.js';
 
-function ResumeSection() {
-	return (
-		<div className="resumeSectionWrapper">
-			<ul className="timeline">
-				<li>Engineering @ LiveRamp</li>
-				<li>Solutions Architect @ LiveRamp</li>
-				<li>Professional Services @ Medallia</li>
-				<li>Product Operations @ LiveRamp</li>
-				<li>Professional Services @ Achievers</li>
-				<li>Product @ Achievers</li>
-				<li>Marketing @ Amphenol</li>
-				<li>Product Operations @ BlackBerry</li>
-				<li>Battery Engineering @ BlackBerry</li>
-			</ul>
-			<div className="timelineDetails">
-				<h3>Full Stack Engineer</h3>
-        <h4>September 2019 - Present</h4>
-        <ul>
-          <li>Lead OAuth project</li>
-          <li>Scrum master</li>
-          <li>Quality initiatives</li>
-        </ul>
-        <p></p>
+export class ResumeSection extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			jobTitle: data[0].jobTitle,
+			date: data[0].date,
+			jobDescription: data[0].jobDescription,
+		};
+	}
+
+	render() {
+		return (
+			<div className="resumeSectionWrapper">
+				<ul className="timeline">
+					{data.map((entry, index) => {
+						return (
+							<li key={index} onClick={() => this.handleClick(index)}>
+								{entry.company}
+							</li>
+						);
+					})}
+				</ul>
+				<div className="timelineDetails">
+					<h3>{this.state.jobTitle}</h3>
+					<h4>{this.state.date}</h4>
+					<ul>
+						{this.state.jobDescription.map((entry) => {
+							return <li>{entry}</li>;
+						})}
+					</ul>
+				</div>
 			</div>
-		</div>
-	);
+		);
+	}
+
+	handleClick(index) {
+		this.setState({
+			jobTitle: data[index].jobTitle,
+			date: data[index].date,
+			jobDescription: data[index].jobDescription,
+		});
+	}
 }
 
 export default ResumeSection;

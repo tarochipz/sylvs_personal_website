@@ -12,6 +12,12 @@
   padding: 10px;
 }
 
+.timeline > li:hover {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
 .timelineDetails {
   border: 1px solid red;
   margin: 15px;

@@ -18,7 +18,7 @@ class App extends React.Component {
 				</div>
 				<SvgBackground />
 				<AboutSection />
-				<ResumeSection/>
+				<ResumeSection />
 				{/* <Footer/> */}
 			</div>
 		);
