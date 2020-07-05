@@ -4,10 +4,15 @@
 .homepageWrapper{
   padding-left: 8%;
   padding-right: 8%;
+  position: relative;
+  min-height: 100%;
 }
 
 .nav {
   background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .textOverlay {

@@ -3,7 +3,7 @@ import './svgBackground.css';
 
 function SvgBackground() {
 	return (
-		<svg width="device-width" height="auto" version="1.1" viewBox="0 0 362 200" preserveAspectRatio="xMidYMin slice">
+		<svg className="svgBackgroundWrapper" width="device-width" height="auto" version="1.1" viewBox="0 0 362 200" preserveAspectRatio="xMidYMin slice">
 			<g class="background">
 				<rect
 					id="gradient-sky-container"

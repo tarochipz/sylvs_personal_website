@@ -23,6 +23,10 @@
     "url": "https://github.com/tarochipz/portfolio_website/issues"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-brands-svg-icons": "^5.13.1",
+    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "express": "^4.17.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",

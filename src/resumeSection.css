@@ -1,9 +1,9 @@
 .timeline {
-  font-family: 'Raleway', sans-serif;
-  color: red;
+  font-family: 'Inconsolata', monospace;
+  color: #6593E1;;
   list-style-type: none;
   text-align: right;
-  border-right: 3px solid red;
+  border-right: 3px solid #0157B8;;
   width: 30%;
   float: left;
   padding-inline-start: 0px;
@@ -21,11 +21,12 @@
 .timeline .active {
   font-weight: bold;
   font-size: 1.1em;
+  color: #0157B8;
 }
 
 .timelineDetails {
   font-family: 'Inconsolata', monospace;
-  color: red;
+  color: #0157B8;
   margin: 10px;
   float: left;
   width: 60%;

@@ -5,6 +5,7 @@ import NavBar from './navBar.jsx';
 import SvgBackground from './svgBackground.jsx';
 import AboutSection from './aboutSection.jsx';
 import ResumeSection from './resumeSection.jsx';
+import Footer from './footer.jsx';
 
 class App extends React.Component {
 	render() {
