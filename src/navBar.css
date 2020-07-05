@@ -16,6 +16,16 @@
   display: inline;
 }
 
+.svg-inline--fa {
+  transition: transform 1s;
+}
+
+.svg-inline--fa:hover {
+  color: #ff9e9e;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
 .socialIconWrapper {
  padding-left: 10px;
 }

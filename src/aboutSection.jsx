@@ -3,7 +3,7 @@ import './aboutSection.css';
 
 function AboutSection() {
 	return (
-		<div className="aboutSectionWrapper">
+		<div id="about" className="aboutSectionWrapper">
 			<img src="https://i.imgur.com/zbHawOo.jpg?2" />
 			<div className="text">
 				<h2>About Me</h2>

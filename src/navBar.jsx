@@ -10,27 +10,28 @@ class NavBar extends React.Component {
 			<div className="navContainer">
 				<h1 className="logo">SC</h1>
 				<div className="socialIconWrapper">
-					<div className='icon'>
-						<FontAwesomeIcon color='red' size="1.5x" icon={faLinkedin} />
-					</div>
-					<div className='icon'>
-						<FontAwesomeIcon color='red' size="1.5x"  icon={faGithubSquare} />
-					</div>
-					<div className='icon'>
-						<FontAwesomeIcon color='red' size="1.5x"  icon={faInstagram} />
-					</div>
-					<div className='icon'>
-						<FontAwesomeIcon color='red' size="1.5x"  icon={faEnvelope} />
-					</div>
+					<a href="https://www.linkedin.com/in/sylviacung/" target="_blank" className="icon">
+						<FontAwesomeIcon color="red" size="1.5x" icon={faLinkedin} />
+					</a>
+					<a href="https://github.com/tarochipz" target="_blank" className="icon">
+						<FontAwesomeIcon color="red" size="1.5x" icon={faGithubSquare} />
+					</a>
+					<a href="https://www.instagram.com/tarochipz/" target="_blank" className="icon">
+						<FontAwesomeIcon color="red" size="1.5x" icon={faInstagram} />
+					</a>
+					<a href="mailto:sylvcung@gmail.com" target="_blank" className="icon">
+						<FontAwesomeIcon color="red" size="1.5x" icon={faEnvelope} />
+					</a>
 				</div>
+
 				<ul className="menu">
 					<a href="#">
 						<li>Home</li>
 					</a>
-					<a href="#">
+					<a href="#about">
 						<li>About</li>
 					</a>
-					<a href="#">
+					<a href="#resume">
 						<li>Resume</li>
 					</a>
 					<a href="#">
