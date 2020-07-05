@@ -16,6 +16,7 @@ export class ResumeSection extends React.Component {
 	render() {
 		return (
 			<div id="resume" className="resumeSectionWrapper">
+				<h2>Work Experience</h2>
 				<ul className="timeline">
 					{data.map((entry, index) => {
 						return (

@@ -1,10 +1,20 @@
-.footer {
-  position: absolute;
+.footerWrapper {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
-  color: white;
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+  color: red;
   text-align: center;
-  padding-top: 20px
+  padding: 20px;
+  position: sticky;
+}
+
+.footerLink {
+  color: red;
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  text-decoration: underline;
 }

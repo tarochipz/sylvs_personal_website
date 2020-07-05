@@ -20,7 +20,7 @@ class App extends React.Component {
 				<SvgBackground />
 				<AboutSection />
 				<ResumeSection />
-				{/* <Footer/> */}
+				<Footer/>
 			</div>
 		);
 	}
