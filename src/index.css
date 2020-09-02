@@ -24,7 +24,7 @@
   /* to center absolute positioned element */
   left: 50%;
   margin-left: -40%;
-  top: 30%;
+  top: 10%;
   /**/
   animation:
     typing 6s steps(30, end),

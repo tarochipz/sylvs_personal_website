@@ -11,14 +11,14 @@ function AboutSection() {
 				<p>
 					Prior to being a Software Engineer I got a degree in Chemical Engineering from the University of
 					Waterloo in Canada, and worked in various roles within Professional Services and Sales Engineering
-					for 3 years.
+					for 4 years.
 				</p>
 				<p>
 					I enjoy solving problems and creating visual things - from web apps and UIs, to Instagram content,
 					to a delicious aesthetically plated meal.
 				</p>
 				<p>
-					I spend my time away from my computer casually biking around the Bay Area, playing Beat Saber and
+					I spend my time away from my computer biking or hiking around the Bay Area, playing Beat Saber and
 					DDR, doing HIIT and hot yoga, doing photography, creating food and cocktail recipes, travelling to
 					new places, and attending music festivals.
 				</p>
