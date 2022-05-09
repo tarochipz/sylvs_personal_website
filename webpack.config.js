@@ -25,6 +25,10 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist'),
 		// path: __dirname + 'app/assets/javascript',
 		filename: 'bundle.js',
+		publicPath: '/'
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   // optional configuratins below
 	// 1. plugins are used for any other task that loaders can’t do (asset mgmt, optimization etc.)

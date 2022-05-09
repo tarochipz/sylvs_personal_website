@@ -1,29 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import NavBar from './navBar.jsx';
-import SvgBackground from './svgBackground.jsx';
-import AboutSection from './aboutSection.jsx';
-import ResumeSection from './resumeSection.jsx';
-import Footer from './footer.jsx';
+import React from "react";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import ReactDOM from "react-dom";
+import App from "./app.jsx";
+// import PhotographyRoute from "./routes/photographyRoute.jsx";
 
-class App extends React.Component {
-	render() {
-		return (
-			<div className='homepageWrapper'>
-				<div className='nav'>
-					<NavBar />
-				</div>
-				<div className='textOverlay'>
-					<h2>Hi, I'm Sylvia! A full stack engineer based in San Francisco, from Toronto.</h2>
-				</div>
-				<SvgBackground />
-				<AboutSection />
-				<ResumeSection />
-				<Footer/>
-			</div>
-		);
-	}
-}
-
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+  
+  // ReactDOM.render(
+  //   <BrowserRouter>
+  //     <Routes>
+  //       <Route path="/" element={<App />} />
+  //       <Route path="photography" element={<PhotographyRoute />} />
+  //     </Routes>
+  //   </BrowserRouter>,
+  //   document.getElementById("root")
+);
