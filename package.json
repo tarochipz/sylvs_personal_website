@@ -27,10 +27,12 @@
     "@fortawesome/free-brands-svg-icons": "^5.13.1",
     "@fortawesome/free-solid-svg-icons": "^5.13.1",
     "@fortawesome/react-fontawesome": "^0.1.11",
+    "@mui/material": "^5.6.4",
     "express": "^4.17.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-inlinesvg": "^1.2.0",
+    "react-router": "^6.3.0",
     "react-svg-loader": "^3.0.3",
     "svg-inline-loader": "^0.8.2",
     "svg-url-loader": "^6.0.0"
