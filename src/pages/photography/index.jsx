@@ -3,10 +3,28 @@ import Gallery from "../../sharedComponents/gallery.jsx";
 import { data } from "./imageData.jsx";
 
 export default function Photography() {
-  return <Gallery itemData={itemData} />;
+  const [images, setImages] = React.useState([]);
+
+  const fetchImages = async () => {
+    const response = await fetch("https://photos.app.goo.gl/F6bbDLhLAabdR2ha9");
+    if (!response.ok) {
+      throw new Error(`Error: ${response.status}`);
+    }
+    debugger;
+    const images = await response.json();
+    return images;
+  };
+
+  React.useEffect(() => {
+    fetchImages().then((images) => {
+      setImages(images);
+    });
+  }, []);
+
+  return <Gallery itemData={images} />;
 }
 
-const baseURL = "https://photos.app.goo.gl/";
+// const baseURL = "https://photos.app.goo.gl/";
 
 const itemData = [
   // {
